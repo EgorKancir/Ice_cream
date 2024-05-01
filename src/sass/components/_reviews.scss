@@ -1,0 +1,155 @@
+.reviews {
+    margin: 0;
+    background-image: url("../src/image/raster/section4-reviews/background_desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__content {
+        padding-top: 464px;
+        padding-bottom: 222px;
+        @extend %position-center;
+        position: relative;
+    }
+    &__main-image {
+        width: 1013px;
+        height: 422px;
+        flex-shrink: 0;
+        border-radius: 24px;
+        position: absolute;
+        top: -98px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__client-avatar {
+        width: 85px;
+        height: 85px;
+        flex-shrink: 0;
+        border-radius: 50%;
+    }
+    &__commit-box {
+        padding: 43px 109px;
+        border-radius: 24px;
+        background: $background-green;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            background-color: $chocolate;
+        }
+    }
+    &__commit {
+        color: $white-tender;
+        text-align: center;
+        @extend %main-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 186%;
+        letter-spacing: 0.64px;
+        width: 750px;
+    }
+    &__client-info {
+        color: $black-standrd;
+        text-align: center;
+        @extend %main-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 186%; 
+    }
+}
+.swiper {
+    box-sizing: content-box;
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    @extend %position-center;
+    flex-direction: column;
+    gap: 32px;
+}
+.swiper-pagination {
+    position: absolute;
+    bottom: 0 !important;
+}
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 9px 0 9px !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: $background-green;
+}
+@media (max-width: 1200px ) {
+    .reviews {
+        background-image: url("../src/image/raster/section4-reviews/background_tablet.png");
+        &__content {
+            padding-top: 283px;
+            padding-bottom: 373px;
+        }
+        &__main-image {
+            width: 704px;
+            height: 327px;
+            border-radius: 18px;
+            top: -144px;
+        }
+        &__client-avatar {
+            width: 84px;
+            height: 84px;
+        }
+        &__commit-box {
+            padding: 28px 80px;
+        }
+        &__commit {
+            font-size: 14px;
+            letter-spacing: 0.56px;
+            width: 545px;
+        }
+    }
+}
+@media (max-width: 768px ) {
+    .reviews {
+        &__content {
+            padding-top: 235px;
+            padding-bottom: 399px;
+        }
+        &__main-image {
+            width: 440px;
+            height: 204px;
+            border-radius: 8px;
+            top: -50px;
+        }
+        &__client-avatar {
+            width: 85px;
+            height: 85px;
+        }
+        &__commit-box {
+            padding: 35px 39px;
+            border-radius: 10px;
+        }
+        &__commit {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 255%;
+            width: 202px;
+        }
+        &__client-info {
+            font-size: 20px;
+        }
+    }
+    .swiper {
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 480px ) {
+    .reviews {
+        background-image: url("../src/image/raster/section4-reviews/background_mobile.png");
+        &__content {
+            padding-top: 224px;
+            padding-bottom: 407px;
+        }
+        &__main-image {
+            width: 280px;
+            height: 130px;
+            top: -36px;
+        }
+    }
+}

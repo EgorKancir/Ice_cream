@@ -1,0 +1,602 @@
+.header {
+    margin: 0;
+    background: $background-green;
+    &__content {
+        position: relative;
+        @extend %position-center;
+        flex-direction: column;
+        gap: 45px;
+        padding-top: 8px;
+        padding-bottom: 332px;
+        background-image: url("../src/image/raster/section1-header/background-element__desktop.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: bottom;
+    }
+    &__console {
+        width: 100%;
+        @include flex(space-between, center);
+    }
+    &__navigation {
+        @extend %position-center;
+        gap: 308px;
+    }
+    &___main-content {
+        width: 100%;
+        @include flex(space-between, start);
+    }
+    &__information-group {
+        @include flex(center, start);
+        flex-direction: column;
+        gap: 28px;
+    }
+    &__title {
+        width: 367px;
+        color: $white-tender;
+        @extend %decor-font;
+        font-size: 38px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.52px;
+        text-transform: uppercase;
+    }
+    &__button-group {
+        @extend %position-center;
+        gap: 34px;
+    }
+    &__button {
+        width: 134px;
+        height: 42px;
+        flex-shrink: 0;
+        @extend %position-center;
+        padding: 12px 34px;
+        border: 2px solid $yellow-standard;
+        border-radius: 9px;
+        color: $black-standrd;
+        text-align: center;
+        @extend %main-font;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+            background: $yellow-standard;
+            color: $white-standard;
+        }
+    }
+    &__text-button {
+        color: $yellow-standard;
+        text-align: center;
+        @extend %main-font;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration-line: underline;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+            color: $white-standard;
+        }
+    }
+    &__dop-info {
+        position: absolute;
+        left: 257px;
+        bottom: 103px;
+        @include flex(center, start);
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__paragraf {
+        width: 200px;
+        color: $white-standard;
+        @extend %special-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 140%; 
+    }
+    &__navbar {
+        display: none;
+    }
+    &__nav-body {
+        @extend %position-center;
+    }
+}
+.logo {
+    &__image {
+        width: 60px;
+        height: 65px;
+        flex-shrink: 0;
+    }
+}
+.navigation {
+    &__list {
+        @extend %position-center;
+        gap: 28px;
+        padding: 0;
+    }
+    &__link {
+        color: $white-tender;
+        @extend %main-font;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        &:hover {
+            transform: scale(1.05);
+            color: $yellow-standard;
+        }
+    }
+}
+.modal-buy {
+    &__button {
+        width: 152px;
+        height: 42px;
+        flex-shrink: 0;
+        padding: 12px 35px;
+        border-radius: 10px;
+        background: $yellow-standard;
+        @extend %position-center;
+        gap: 4px;
+        color: $black;
+        text-align: center;
+        @extend %main-font;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+            background: $chocolate;
+        }
+    }
+    &__button-icon {
+        width: 12px;
+        height: 12px;
+        flex-shrink: 0;
+    }
+    &__content {
+        width: 568px;
+        position: relative;
+        padding: 32px 54px;
+        border-radius: 10px;
+        border: 2px solid $yellow-standard;
+        background: $white-tender;
+        @extend %position-center;
+        flex-direction: column;
+        gap: 103px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__header {
+        @extend %position-center;
+    }
+    &__title {
+        color: $black-standrd;
+        text-align: center;
+        @extend %decor-font;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px; 
+    }
+    &__close-btn {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+    &__form {
+        @extend %position-center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__products-group {
+        @extend %position-center;
+        gap: 32px;
+    }
+}
+.product-card {
+    width: 132px;
+    position: relative;
+    padding: 95px 11px 20px 11px;
+    border-radius: 15px;
+    box-shadow: 0px 5.26px 19.726px 0px rgba(212, 20, 67, 0.10);
+    color: $black-standrd;
+    text-align: center;
+    @extend %main-font;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    &__image {
+        width: 176px;
+        height: auto;
+        flex-shrink: 0;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &:nth-child(2) {
+        border: 2px solid $pistachio;
+    }
+    &:nth-child(4) {
+        border: 2px solid $yellow-weak;
+    }
+    &:nth-child(6) {
+        border: 2px solid $chocolate;
+    }
+    &__radio {
+        display: none;
+    } 
+    &__radio:checked {
+        & + .product-card {
+            &:nth-child(2) {
+                background-color: $pistachio;
+            }
+            &:nth-child(4) {
+                background-color: $yellow-weak;
+            }
+            &:nth-child(6) {
+                background-color: $chocolate;
+            }
+        }     
+    }
+}
+.registration {
+    @extend %position-center;
+    flex-direction: column;
+    gap: 32px;
+    &__input-group {
+        @extend %position-center;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__input {
+        width: 368px;
+        height: 42px;
+        flex-shrink: 0;
+        padding: 11px 16px;
+        color: $black-standrd;
+        @extend %main-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 140%; 
+        border-radius: 10px;
+        border: 1px solid $background-green;
+        background: rgba(248, 210, 78, 0.10);
+        outline: none;
+        &:focus-visible {
+            border: 1px solid $yellow-standard;
+        }
+    }
+    &__commit {
+        width: 368px;
+        height: 84px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1px solid $background-green;
+        background: rgba(248, 210, 78, 0.10);
+        padding: 11px 16px;
+        color: $black-standrd;
+        @extend %main-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 140%; 
+        outline: none;
+        &:focus-visible {
+            border: 1px solid $yellow-standard;
+        }
+    }
+    &__button {
+        padding: 12px 34px;
+        border-radius: 10px;
+        background: $yellow-standard;
+        border: none;
+        color: $black-standrd;
+        text-align: center;
+        @extend %main-font;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: $white-standard;
+            background: $background-green;
+            transform: scale(1.1);
+        }
+    }
+}
+.arrow {
+    &__icon {
+        width: 40px;
+        height: 16px;
+        flex-shrink: 0;
+        fill: $white-tender;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: translateX(4px);
+            fill: $chocolate;
+        }
+    }
+}
+.statistics {
+    @include flex(center, end);
+    flex-direction: column;
+    gap: 16px;
+    &__element {
+        @include flex(center, end);
+        flex-direction: column;
+        gap: 4px;
+    }
+    &__number {
+        color: $black-standrd;
+        text-align: right;
+        @extend %main-font;
+        font-size: 46px;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 1.84px;
+        text-transform: uppercase;
+    }
+    &__name {
+        color: $white-tender;
+        text-align: right;
+        @extend %main-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+@media (max-width: 1200px ) {
+    .header {
+        &__content {
+            gap: 14px;
+            padding-top: 20px;
+            padding-bottom: 176px;
+            background-image: url("../src/image/raster/section1-header/background-element__tablet.png");
+        }
+        &__navigation {
+            @include flex(start, center);
+            gap: 0;
+        }
+        &__information-group {
+            gap: 24px;
+        }
+        &__title {
+            width: 247px;
+            font-size: 26px;
+            letter-spacing: 1.04px;
+        }
+        &__button-group {
+            gap: 20px;
+        }
+        &__button {
+            width: 108px;
+            height: 38px;
+            padding: 11px 26px;
+            font-size: 12px;
+            line-height: normal;
+        }
+        &__text-button {
+            font-size: 12px;
+        }
+        &__dop-info {
+            left: 216px;
+            bottom: 24px;
+            gap: 29px;
+        }
+        &__paragraf {
+            width: 165px;
+            font-size: 12px;
+        }
+        &__nav-body {
+            gap: 32px;
+        }
+        &__navbar {
+            display: flex;
+        }
+        &__navbar-button {
+            width: 32px;
+            height: 32px;
+            position: relative;
+            box-shadow: none;
+            border: none;
+            outline: none;
+        }
+        &__navbar-button-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: none;
+            outline: none;
+            fill: $white-standard;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                fill: $yellow-standard;
+            }
+        }
+        &__offcanvas {
+            padding: 20px 32px;
+            width: 100vw;
+            height: 100vh;
+            background-color: $background-green;
+            gap: 76px;
+            @include flex(start, center);
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        &__btn-close {
+            margin: 12px 0 0 0 !important; 
+            padding: 0 !important;
+            width: 32px;
+            height: 32px;
+        }
+    }
+    .logo {
+        &__image {
+            width: 48px;
+            height: 44px;
+            flex-shrink: 0;
+        }
+    }
+    .navigation {
+        &__list {
+            flex-direction: column;
+            gap: 40px;
+        }
+        &__link {
+            font-size: 48px;
+            &:hover {
+                color: $black-standrd;
+            }
+        }
+    }
+    .statistics {
+        gap: 20px;
+        &__number {
+            font-size: 28px;
+            letter-spacing: 1.12px;
+        }
+        &__name {
+            font-size: 8px;
+        }
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .offcanvas-header {
+        width: 100%;
+        padding: 0;
+        @include flex(space-between, center)
+    }
+}
+@media (max-width: 768px ) {
+    .header {
+        &__content {
+            gap: 40px;
+            padding: 14px 5px 150px 5px;
+            background-image: url("../src/image/raster/section1-header/background-element__mobile.png");
+            background-position: bottom 0 right 0;
+            background-size: 330px auto;
+        }
+        &__console {
+            @include flex(space-between, start);
+        }
+        &__information-group {
+            gap: 32px;
+        }
+        &__button-group {
+            gap: 12px;
+        }
+        &__nav-body {
+            gap: 0;
+        }
+        &__offcanvas {
+            padding: 20px 20px;   
+            gap: 40px;
+        }
+        &__offcanvas-main {
+            @include flex(center, center);
+            flex-direction: column;
+            gap: 114px;
+        }
+        &__btn-close {
+            margin: 0 0 0 0 !important;
+        }
+    }
+    .navigation {
+        &__list {
+            gap: 32px;
+        }
+        &__link {
+            font-size: 32px;
+        }
+    }
+    .offcanvas-header {
+        @include flex(space-between, start)
+    }
+    .modal-buy {
+        &__button {
+            padding: 12px 35px;
+            border-radius: 10px;
+            background: $yellow-standard;
+            @extend %position-center;
+            gap: 4px;
+            color: $black;
+            text-align: center;
+            @extend %main-font;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: normal;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+                background: $chocolate;
+            }
+        }
+        &__content {
+            width: 280px;
+            padding: 28px;
+            gap: 83px;
+        }
+        &__title {
+            font-size: 16px;
+            line-height: 24px; 
+        }
+        &__close-btn {
+            width: 20px;
+            height: 20px;
+        }
+        &__form {
+            gap: 30px;
+        }
+        &__products-group {
+            flex-direction: column;
+            gap: 85px;
+        }
+    }
+    .registration {
+        gap: 26px;
+        &__input-group {
+            gap: 12px;
+        }
+        &__input {
+            width: 224px;
+            height: 32px;
+            padding: 8px 12px;
+            font-size: 12px;
+        }
+        &__commit {
+            width: 224px;
+            height: 65px;
+            padding: 8px 12px;
+            font-size: 12px;
+        }
+        &__button {
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 480px ) {
+    .header {
+        &__content {
+            gap: 50px;
+            padding: 12px 5px 236px 5px;
+            background-position: left 50%, right 50%, bottom 0;
+            background-size: 100% auto;
+        }
+        &__offcanvas {
+            padding: 12px 20px;   
+            gap: 50px;
+        }
+    }
+}
