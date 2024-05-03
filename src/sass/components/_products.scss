@@ -27,7 +27,7 @@
 }
 
 .ice {
-    gap: 29px;
+    gap: 27px;
     padding: 280px 0 50px 0;
     flex-wrap: wrap;
     @include flex-j-content-align($display:flex, $j-content:center, $align:center);
