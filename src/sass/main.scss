@@ -16,9 +16,12 @@ a {
 @import'utils/mixin', 
 'utils/placholder', 
 'utils/variables';
-@import'components/header', 
+@import'components/header',
+'components/products', 
 'components/made', 
 'components/reviews';
+
+@import './components/footer';
 @media (max-width: 1200px ) {
     .container {
         width: 768px; 

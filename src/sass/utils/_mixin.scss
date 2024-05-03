@@ -3,3 +3,26 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+
+@mixin flex-j-content-align($display, $j-content, $align) {
+    display: $display;
+    justify-content: $j-content;
+    align-items: $align;
+}
+
+@mixin d-flex-direction-align($d-flex, $direction, $align-center) {
+    display: $d-flex;
+    flex-direction: $direction;
+    align-items: $align-center;
+}
+
+@mixin flex-align($flex, $align-cen) {
+    display: $flex;
+    align-items: $align-cen;
+}
+
+@mixin flex-direction($d-fl, $fl-direction) {
+    display: $d-fl;
+    flex-direction: $fl-direction;
+}
