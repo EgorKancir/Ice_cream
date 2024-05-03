@@ -1,5 +1,5 @@
 .products {
-    background-image: url("../image/raster/section2-products/bg-products.png");
+    background-image: url("/src/image/raster/section2-products/bg-products.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -592,6 +592,6 @@
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .products {
-        background-image: url("../image/raster/section2-products/bg-products2x.png");
+        background-image: url("/src/image/raster/section2-products/bg-products2x.png");
     }
 }

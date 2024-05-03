@@ -63,7 +63,7 @@ a {
   gap: 45px;
   padding-top: 8px;
   padding-bottom: 332px;
-  background-image: url("../src/image/raster/section1-header/background-element__desktop.png");
+  background-image: url("/src/image/raster/section1-header/background-element__desktop.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: bottom;
@@ -402,7 +402,7 @@ a {
     gap: 14px;
     padding-top: 20px;
     padding-bottom: 176px;
-    background-image: url("../src/image/raster/section1-header/background-element__tablet.png");
+    background-image: url("/src/image/raster/section1-header/background-element__tablet.png");
   }
   .header__navigation {
     display: flex;
@@ -527,7 +527,7 @@ a {
   .header__content {
     gap: 40px;
     padding: 14px 5px 150px 5px;
-    background-image: url("../src/image/raster/section1-header/background-element__mobile.png");
+    background-image: url("/src/image/raster/section1-header/background-element__mobile.png");
     background-position: bottom 0 right 0;
     background-size: 330px auto;
   }
@@ -641,7 +641,7 @@ a {
   }
 }
 .products {
-  background-image: url("../image/raster/section2-products/bg-products.png");
+  background-image: url("/src/image/raster/section2-products/bg-products.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1209,7 +1209,7 @@ a {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products {
-    background-image: url("../image/raster/section2-products/bg-products2x.png");
+    background-image: url("/src/image/raster/section2-products/bg-products2x.png");
   }
 }
 .made {
@@ -2137,6 +2137,7 @@ ul {
   font-weight: 700;
   line-height: 186%;
   letter-spacing: 0.32px;
+  width: 171px;
 }
 .contact__phone {
   color: #fff;
@@ -2144,6 +2145,7 @@ ul {
   font-weight: 700;
   line-height: 186%;
   letter-spacing: 0.32px;
+  width: 164px;
 }
 
 hr {
