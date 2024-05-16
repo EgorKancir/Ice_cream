@@ -78,6 +78,13 @@
 .swiper-pagination-bullet-active {
     background-color: $background-green;
 }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .reviews {
+        background-image: url("../src/image/raster/section4-reviews/background_desktop@2x.png");
+    }
+}
 @media (max-width: 1200px ) {
     .reviews {
         background-image: url("../src/image/raster/section4-reviews/background_tablet.png");
@@ -102,6 +109,13 @@
             font-size: 14px;
             letter-spacing: 0.56px;
             width: 545px;
+        }
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .reviews {
+            background-image: url("../src/image/raster/section4-reviews/background_tablet@2x.png");
         }
     }
 }
@@ -150,6 +164,13 @@
             width: 280px;
             height: 130px;
             top: -36px;
+        }
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .reviews {
+            background-image: url("../src/image/raster/section4-reviews/background_mobile@2x.png");
         }
     }
 }

@@ -81,7 +81,15 @@
         transition: all 0.2s ease-in-out;
         &:hover {
             transform: scale(1.1);
-            background: $chocolate;
+            background: $green_hover;
+        }
+        &:focus {
+            color: $white-tender;
+            fill: $white-tender;
+            background: $green_hover;
+        }
+        &:disabled {
+            background: $grey_disabled;
         }
     }
     &__btn-icon {

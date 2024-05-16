@@ -8,7 +8,7 @@
         gap: 45px;
         padding-top: 8px;
         padding-bottom: 332px;
-        background-image: url("/src/image/raster/section1-header/background-element__desktop.png");
+        background-image: url("../src/image/raster/section1-header/background-element__desktop.png");
         background-repeat: no-repeat;
         background-size: 100% auto;
         background-position: bottom;
@@ -60,9 +60,16 @@
         line-height: 18px;
         transition: all 0.2s ease-in-out;
         &:hover {
-            transform: scale(1.05);
-            background: $yellow-standard;
-            color: $white-standard;
+            transform: scale(1.1);
+            color: $black;
+            border-color: $green_hover;
+        }
+        &:focus {
+            color: $white-tender;
+            border-color: $green_hover;
+        }
+        &:disabled {
+            border-color: $grey_disabled;
         }
     }
     &__text-button {
@@ -75,8 +82,14 @@
         text-decoration-line: underline;
         transition: all 0.2s ease-in-out;
         &:hover {
-            transform: scale(1.05);
-            color: $white-standard;
+            transform: scale(1.1);
+            color: $green_hover;
+        }
+        &:focus {
+            color: $white-tender;
+        }
+        &:disabled {
+            color: $grey_disabled;
         }
     }
     &__dop-info {
@@ -140,6 +153,7 @@
         @extend %position-center;
         gap: 4px;
         color: $black;
+        fill: $black;
         text-align: center;
         @extend %main-font;
         font-size: 14px;
@@ -148,7 +162,15 @@
         transition: all 0.2s ease-in-out;
         &:hover {
             transform: scale(1.1);
-            background: $chocolate;
+            background: $green_hover;
+        }
+        &:focus {
+            color: $white-tender;
+            fill: $white-tender;
+            background: $green_hover;
+        }
+        &:disabled {
+            background: $grey_disabled;
         }
     }
     &__button-icon {
@@ -313,10 +335,17 @@
         line-height: normal;
         transition: all 0.2s ease-in-out;
         &:hover {
-            color: $white-standard;
-            background: $background-green;
             transform: scale(1.1);
+            background: $green_hover;
         }
+        &:focus {
+            color: $white-tender;
+            background: $green_hover;
+        }
+        &:disabled {
+            background: $grey_disabled;
+        }
+        
     }
 }
 .arrow {
@@ -328,7 +357,13 @@
         transition: all 0.2s ease-in-out;
         &:hover {
             transform: translateX(4px);
-            fill: $chocolate;
+            fill: $green_hover;
+        }
+        &:focus {
+            fill: $white-tender;
+        }
+        &:disabled {
+            fill: $grey_disabled;
         }
     }
 }
@@ -360,13 +395,22 @@
         line-height: normal;
     }
 }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .header {
+        &__content {
+            background-image: url("../src/image/raster/section1-header/background-element__desktop@2x.png");
+        }
+    }
+}
 @media (max-width: 1200px ) {
     .header {
         &__content {
             gap: 14px;
             padding-top: 20px;
             padding-bottom: 176px;
-            background-image: url("/src/image/raster/section1-header/background-element__tablet.png");
+            background-image: url("../src/image/raster/section1-header/background-element__tablet.png");
         }
         &__navigation {
             @include flex(start, center);
@@ -485,13 +529,22 @@
         padding: 0;
         @include flex(space-between, center)
     }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .header {
+            &__content {
+                background-image: url("../src/image/raster/section1-header/background-element__tablet@2x.png");
+            }
+        }
+    }
 }
 @media (max-width: 768px ) {
     .header {
         &__content {
             gap: 40px;
             padding: 14px 5px 150px 5px;
-            background-image: url("/src/image/raster/section1-header/background-element__mobile.png");
+            background-image: url("../src/image/raster/section1-header/background-element__mobile.png");
             background-position: bottom 0 right 0;
             background-size: 330px auto;
         }
@@ -532,24 +585,6 @@
         @include flex(space-between, start)
     }
     .modal-buy {
-        &__button {
-            padding: 12px 35px;
-            border-radius: 10px;
-            background: $yellow-standard;
-            @extend %position-center;
-            gap: 4px;
-            color: $black;
-            text-align: center;
-            @extend %main-font;
-            font-size: 14px;
-            font-weight: 600;
-            line-height: normal;
-            transition: all 0.2s ease-in-out;
-            &:hover {
-                transform: scale(1.1);
-                background: $chocolate;
-            }
-        }
         &__content {
             width: 280px;
             padding: 28px;
@@ -590,6 +625,15 @@
         }
         &__button {
             font-size: 12px;
+        }
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .header {
+            &__content {
+                background-image: url("../src/image/raster/section1-header/background-element__mobile@2x.png");
+            }
         }
     }
 }
