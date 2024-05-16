@@ -18,12 +18,18 @@
       padding: 12px 0 12px 0;
       width: 255px;
     }
+    &-line {
+      background-color: #E1E1E1;
+      width: 1167px;
+      height: 0.1px;
+    }
   }
 }
 .sterling {
   gap: 32px;
-  position: absolute;
   top: -114px;
+  // position: relative;
+  position: absolute;
   @include flex-j-content-align(
     $display: flex,
     $j-content: center,
@@ -187,10 +193,14 @@
     $align: center
   );
   gap: 16px;
-  padding: 474px 0 120px 0;
+  // padding: 0 0 120px 0;
+  padding: 490px 0 120px 0;
   flex-wrap: wrap;
 }
 .franchise {
+  & svg {
+    fill: $black;
+  }
   &__button {
     color: $light-black-product;
     text-align: center;
@@ -208,9 +218,24 @@
     border-radius: 10px;
     background-color: transparent;
     border: 2px solid $cafe-footer-light-yellow;
+    transition: border .3s linear, transform .3s linear;
+    &:hover {
+      border: 2px solid $green_hover;
+      transform: scale(1.1);
+    }
+    &:focus {
+      color: $white-standard;
+      border: 2px solid $green_hover;
+    }
+    &:focus svg {
+      fill: $white-standard;
+    }
   }
 }
 .location {
+  & svg {
+    fill: $black;
+  }
   &__button {
     color: $light-black-product;
     text-align: center;
@@ -228,6 +253,18 @@
     padding: 14px 40px;
     border: none;
     border-radius: 10px;
+    transition: bg-color .3s linear, transform .3s linear;
+    &:hover {
+      background-color: $green_hover;
+      transform: scale(1.1);
+    }
+    &:focus {
+      color: $white-standard;
+      background-color: $green_hover;
+    }
+    &:focus svg {
+      fill: $white-standard;
+    }
   }
   &__modal-title {
     color: $light-black-product;
@@ -345,9 +382,14 @@ p {
   padding: 0 0 32px 0;
 }
 .passion {
-  @include flex-j-content-align($display:flex, $j-content:center, $align:center);
-  gap: 270px;
+  @include flex-j-content-align($display:flex, $j-content:space-between, $align:center);
+  gap: 333px;
   padding: 0 0 60px 0;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
   &__title {
     color: $modal-bg-footer-light-white;
     font-size: 58px;
@@ -365,6 +407,7 @@ p {
     line-height: normal;
     letter-spacing: 1.2px;
     text-transform: uppercase;
+    width: 504px;
   }
 }
 .feel {
@@ -378,21 +421,30 @@ p {
     fill: $light-green-footer;
     transition: fill 0.3s linear;
     &:hover {
-      fill: $social-fill-footer-gray;
+      fill: $white-standard;
+    }
+    &:focus {
+      fill: $white-standard;
     }
   }
   &__telegram {
     fill: $light-green-footer;
     transition: fill 0.3s linear;
     &:hover {
-      fill: $social-fill-footer-light-blue;
+      fill: $white-standard;
+    }
+    &:focus {
+      fill: $white-standard;
     }
   }
   &__facebook {
     fill: $light-green-footer;
     transition: fill 0.3s linear;
     &:hover {
-      fill: $social-fill-footer-blue;
+      fill: $white-standard;
+    }
+    &:focus {
+      fill: $white-standard;
     }
   }
   & .icon {
@@ -506,6 +558,9 @@ address {
 }
 
 @media (max-width: 1200px) {
+  .footer__content-line {
+    width: 768px;
+  }
   .sterling {
     gap: 16px;
     top: -284px;
@@ -557,9 +612,13 @@ address {
     line-height: normal;
     letter-spacing: 1.04px;
     text-transform: uppercase;
+    width: 386px;
+  }
+  .passion__content {
+    gap: 8px;
   }
   .passion {
-    gap: 63px;
+    gap: 66px;
     padding: 0 0 32px 0;
   }
   .passion__title {
@@ -577,11 +636,17 @@ address {
   .footer__content-text {
     font-size: 14px;
     padding: 12px 0 12px 0;
+    width: 297px;
   }
-  
+  .our {
+    padding: 290px 0 40px 0;
+  }
 }
 
 @media (max-width: 768px) {
+  .footer__content-line {
+    width: 480px;
+  }
   .sterling {
     flex-wrap: wrap;
     top: -338px;
@@ -644,7 +709,7 @@ address {
   .our {
     flex-direction: column;
     align-items: center;
-    padding: 943px 0 60px 0;
+    padding: 950px 0 60px 0;
     flex-wrap: wrap;
   }
   .franchise__button {
@@ -657,6 +722,7 @@ address {
     line-height: normal;
     letter-spacing: 1.04px;
     text-transform: uppercase;
+    width: 253px;
   }
   .passion {
     flex-direction: column;
@@ -723,6 +789,9 @@ address {
 }
 
 @media (max-width: 480px) {
+  .footer__content-line {
+    width: 320px;
+  }
   .modal-content-location {
     width: 280px;
   }

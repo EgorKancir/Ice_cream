@@ -345,7 +345,9 @@
         &:disabled {
             background: $grey_disabled;
         }
-        
+    }
+    &__submit {
+        margin: 0 0 32px 0;
     }
 }
 .arrow {

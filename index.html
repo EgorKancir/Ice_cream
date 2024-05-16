@@ -749,8 +749,8 @@
                 <div class="location">
                     <button type="button" class="location__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Our Locations
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                            <path d="M3.1912 1.22012C3.06877 1.3611 3 1.55229 3 1.75163C3 1.95098 3.06877 2.14217 3.1912 2.28315L6.42372 6.00454L3.1912 9.72592C3.07224 9.86771 3.00642 10.0576 3.00791 10.2547C3.0094 10.4519 3.07808 10.6404 3.19915 10.7798C3.32023 10.9192 3.48402 10.9983 3.65524 11C3.82647 11.0017 3.99143 10.9259 4.11459 10.789L7.8088 6.53606C7.93123 6.39508 8 6.20389 8 6.00454C8 5.80519 7.93123 5.614 7.8088 5.47302L4.11459 1.22012C3.99213 1.07918 3.82606 1 3.65289 1C3.47973 1 3.31366 1.07918 3.1912 1.22012Z" fill="black"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                            <path d="M3.1912 1.22012C3.06877 1.3611 3 1.55229 3 1.75163C3 1.95098 3.06877 2.14217 3.1912 2.28315L6.42372 6.00454L3.1912 9.72592C3.07224 9.86771 3.00642 10.0576 3.00791 10.2547C3.0094 10.4519 3.07808 10.6404 3.19915 10.7798C3.32023 10.9192 3.48402 10.9983 3.65524 11C3.82647 11.0017 3.99143 10.9259 4.11459 10.789L7.8088 6.53606C7.93123 6.39508 8 6.20389 8 6.00454C8 5.80519 7.93123 5.614 7.8088 5.47302L4.11459 1.22012C3.99213 1.07918 3.82606 1 3.65289 1C3.47973 1 3.31366 1.07918 3.1912 1.22012Z" fill="inherit"/>
                         </svg>
                     </button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -775,8 +775,8 @@
                 <div class="franchise">
                     <button type="button" class="franchise__button" data-bs-toggle="modal" data-bs-target="#franchise">
                         Franchise
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                            <path d="M3.1912 1.22012C3.06877 1.3611 3 1.55229 3 1.75163C3 1.95098 3.06877 2.14217 3.1912 2.28315L6.42372 6.00454L3.1912 9.72592C3.07224 9.86771 3.00642 10.0576 3.00791 10.2547C3.0094 10.4519 3.07808 10.6404 3.19915 10.7798C3.32023 10.9192 3.48402 10.9983 3.65524 11C3.82647 11.0017 3.99143 10.9259 4.11459 10.789L7.8088 6.53606C7.93123 6.39508 8 6.20389 8 6.00454C8 5.80519 7.93123 5.614 7.8088 5.47302L4.11459 1.22012C3.99213 1.07918 3.82606 1 3.65289 1C3.47973 1 3.31366 1.07918 3.1912 1.22012Z" fill="black"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                            <path d="M3.1912 1.22012C3.06877 1.3611 3 1.55229 3 1.75163C3 1.95098 3.06877 2.14217 3.1912 2.28315L6.42372 6.00454L3.1912 9.72592C3.07224 9.86771 3.00642 10.0576 3.00791 10.2547C3.0094 10.4519 3.07808 10.6404 3.19915 10.7798C3.32023 10.9192 3.48402 10.9983 3.65524 11C3.82647 11.0017 3.99143 10.9259 4.11459 10.789L7.8088 6.53606C7.93123 6.39508 8 6.20389 8 6.00454C8 5.80519 7.93123 5.614 7.8088 5.47302L4.11459 1.22012C3.99213 1.07918 3.82606 1 3.65289 1C3.47973 1 3.31366 1.07918 3.1912 1.22012Z" fill="inherit"/>
                         </svg>
                     </button>
                     <div class="modal fade" id="franchise" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -814,7 +814,7 @@
                                               <textarea class="registration__commit" name="commit" id="registration-commit" placeholder="Comment"></textarea>
                                          </label>
                                      </div>
-                                    <button class="registration__button" type="submit">Submit</button>
+                                    <button class="registration__button registration__submit" type="submit">Submit</button>
                                 </form>
                             </div>
                           </div>
@@ -823,12 +823,14 @@
                 </div>
             </div>
             <div class="passion">
-                <h2 class="passion__title">
-                    <span class="passion__title-made">
+                <div class="passion__content">
+                    <p class="passion__title-made">
                         homemade ice cream made 
-                    </span> <br>
-                    with passion
-                </h2>
+                    </p>
+                    <h2 class="passion__title">
+                        with passion
+                    </h2>
+                </div>
                 <div class="feel">
                     <ul class="social">
                         <li class="icon github">
@@ -886,6 +888,7 @@
                     </div>
                 </div>
             </div>
+            <div class="footer__content-line"></div>
             <p class="footer__content-text text-center">
                 &copy; 2022 - IceCream. All Rights Reserved. 
             </p>
