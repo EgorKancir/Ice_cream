@@ -1,5 +1,5 @@
 .products {
-    background-image: url("/src/image/raster/section2-products/bg-products.png");
+    background-image: url("../src/image/raster/section2-products/bg-products.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -342,13 +342,13 @@
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .products {
-        background-image: url("/src/image/raster/section2-products/bg-products2x.png");
+        background-image: url("../src/image/raster/section2-products/bg-products2x.png");
     }
 }
 
 @media (max-width: 1200px) {
     .products {
-        background-image: url("/src/image/raster/section2-products/bg-products-tablet.png");
+        background-image: url("../src/image/raster/section2-products/bg-products-tablet.png");
         &__content-title {
             margin: 0;
             padding: 60px 0 0 0;
@@ -372,7 +372,7 @@
     @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .products {
-            background-image: url("/src/image/raster/section2-products/bg-products-tablet2x.png");
+            background-image: url("../src/image/raster/section2-products/bg-products-tablet2x.png");
         }
     }
     .ice {
@@ -559,7 +559,7 @@
 
 @media (max-width: 480px) {
     .products {
-        background-image: url("/src/image/raster/section2-products/bg-products-mobile.png");
+        background-image: url("../src/image/raster/section2-products/bg-products-mobile.png");
         &__content-title {
             padding: 61px 0 0 0;
         }
@@ -567,7 +567,7 @@
     @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .products {
-            background-image: url("/src/image/raster/section2-products/bg-products-mobile2x.png");
+            background-image: url("../src/image/raster/section2-products/bg-products-mobile2x.png");
         }
     }
     .ice {

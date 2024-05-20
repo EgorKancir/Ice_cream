@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -677,7 +681,7 @@ a {
   }
 }
 .products {
-  background-image: url("/src/image/raster/section2-products/bg-products.png");
+  background-image: url("../src/image/raster/section2-products/bg-products.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1032,12 +1036,12 @@ a {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products {
-    background-image: url("/src/image/raster/section2-products/bg-products2x.png");
+    background-image: url("../src/image/raster/section2-products/bg-products2x.png");
   }
 }
 @media (max-width: 1200px) {
   .products {
-    background-image: url("/src/image/raster/section2-products/bg-products-tablet.png");
+    background-image: url("../src/image/raster/section2-products/bg-products-tablet.png");
   }
   .products__content-title {
     margin: 0;
@@ -1061,7 +1065,7 @@ a {
 }
 @media (max-width: 1200px) and (min-device-pixel-ratio: 2), (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1200px) and (min-resolution: 192dpi), (max-width: 1200px) and (min-resolution: 2dppx) {
   .products {
-    background-image: url("/src/image/raster/section2-products/bg-products-tablet2x.png");
+    background-image: url("../src/image/raster/section2-products/bg-products-tablet2x.png");
   }
 }
 @media (max-width: 1200px) {
@@ -1233,7 +1237,7 @@ a {
 }
 @media (max-width: 480px) {
   .products {
-    background-image: url("/src/image/raster/section2-products/bg-products-mobile.png");
+    background-image: url("../src/image/raster/section2-products/bg-products-mobile.png");
   }
   .products__content-title {
     padding: 61px 0 0 0;
@@ -1241,7 +1245,7 @@ a {
 }
 @media (max-width: 480px) and (min-device-pixel-ratio: 2), (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 480px) and (min-resolution: 192dpi), (max-width: 480px) and (min-resolution: 2dppx) {
   .products {
-    background-image: url("/src/image/raster/section2-products/bg-products-mobile2x.png");
+    background-image: url("../src/image/raster/section2-products/bg-products-mobile2x.png");
   }
 }
 @media (max-width: 480px) {
