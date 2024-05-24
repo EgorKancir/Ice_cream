@@ -1,5 +1,5 @@
 * {
-    cursor: url("../image/vector/cursor.svg"), pointer;
+    cursor: url("../src/image/vector/cursor.svg"), pointer;
 }
 html {
     scroll-behavior: smooth;
@@ -18,7 +18,10 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
-    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        cursor: pointer;
+    }
 }
 @import'utils/mixin', 
 'utils/placholder', 
