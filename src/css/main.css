@@ -1,3 +1,7 @@
+* {
+  cursor: url("../image/vector/cursor.svg"), pointer;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,6 +23,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .swiper-slide, .reviews__content, .indexes__text-box, .indexes__card, .modal-made__main, .modal-made__header, .modal-made__content, .made__description-btn, .made__main-content, .made__title-group, .made__content, .registration__input-group, .registration, .modal-buy__products-group, .modal-buy__form, .modal-buy__header, .modal-buy__content, .modal-buy__button, .navigation__list, .header__nav-body, .header__button, .header__button-group, .header__navigation, .header__content {
@@ -770,6 +775,7 @@ a {
   border: none;
   padding: 0 0 60px 0;
   fill: #131313;
+  cursor: pointer;
 }
 
 .coffee {
@@ -1881,7 +1887,6 @@ a {
 }
 .chicago__map:hover {
   text-decoration-line: underline;
-  cursor: url("/src/image/raster/section5-footer/cursor.png"), auto;
 }
 .chicago__link {
   width: 262px;

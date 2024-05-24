@@ -28,7 +28,6 @@
 .sterling {
   gap: 32px;
   top: -114px;
-  // position: relative;
   position: absolute;
   @include flex-j-content-align(
     $display: flex,
@@ -135,7 +134,6 @@
     transition: text-decoration-line 0.3s linear;
     &:hover {
       text-decoration-line: underline;
-      cursor: url("/src/image/raster/section5-footer/cursor.png"), auto;
     }
   }
   &__link {
@@ -194,7 +192,6 @@
     $align: center
   );
   gap: 16px;
-  // padding: 0 0 120px 0;
   padding: 490px 0 120px 0;
   flex-wrap: wrap;
 }
