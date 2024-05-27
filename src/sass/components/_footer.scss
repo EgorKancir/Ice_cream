@@ -111,6 +111,7 @@
     }
   }
 }
+
 .chicago {
   @include flex-direction($d-fl: flex, $fl-direction: column);
   &__text {
@@ -185,6 +186,7 @@
     line-height: 150%;
   }
 }
+
 .our {
   @include flex-j-content-align(
     $display: flex,
@@ -195,6 +197,7 @@
   padding: 490px 0 120px 0;
   flex-wrap: wrap;
 }
+
 .franchise {
   & svg {
     fill: $black;
@@ -290,6 +293,7 @@
     }
   }
 }
+
 .modal-header-franchise {
   @include flex-direction($d-fl: flex, $fl-direction: column-reverse);
   padding: 1rem 1rem 0 1rem;
@@ -378,10 +382,11 @@ p {
   font-weight: 400;
   line-height: 140%;
   padding: 0 0 32px 0;
+  width: 448px;
 }
 .passion {
-  @include flex-j-content-align($display:flex, $j-content:space-between, $align:center);
   gap: 333px;
+  @include flex-j-content-align($display:flex, $j-content:space-between, $align:center);
   padding: 0 0 60px 0;
   &__content {
     display: flex;
@@ -448,9 +453,6 @@ p {
   & .icon {
     position: relative;
     border-radius: 50%;
-    padding: 15px;
-    width: 50px;
-    height: 50px;
     font-size: 18px;
     @include flex-j-content-align($display:flex, $j-content:center, $align:center);
     flex-direction: column;
@@ -464,10 +466,10 @@ p {
   & .tooltip {
     position: absolute;
     top: 0;
-    font-size: 14px;
+    font-size: 11px;
     background: $white-footer;
     color: $white-footer;
-    padding: 5px 8px;
+    padding: 5px 4px;
     border-radius: 5px;
     box-shadow: 0 10px 10px $social-box-shadow-black;
     opacity: 0;
@@ -486,7 +488,7 @@ p {
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   & .icon:hover .tooltip {
-    top: -34px;
+    top: -37px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -773,6 +775,7 @@ address {
   .modal-body__text{
     font-size: 14px;
     padding: 0 20px 24px 30px;
+    width: 260px;
   }
   .registration__input {
     width: 224px;
@@ -797,6 +800,14 @@ address {
     width: 280px;
   }
   .passion {
-    align-items: center;
+    align-items: end;
+  }
+  .social .tooltip {
+    font-size: 9px;
+    padding: 5px 3px;
+    left: -9px;
+  }
+  .social .tooltip::before {
+    left: 63%;
   }
 }

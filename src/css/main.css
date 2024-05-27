@@ -1,5 +1,5 @@
 * {
-  cursor: url("../image/vector/cursor.svg"), pointer;
+  cursor: url("../src/image/vector/cursor.svg"), pointer;
 }
 
 html {
@@ -23,6 +23,9 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
   cursor: pointer;
 }
 
@@ -2123,13 +2126,14 @@ p {
   font-weight: 400;
   line-height: 140%;
   padding: 0 0 32px 0;
+  width: 448px;
 }
 
 .passion {
+  gap: 333px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 333px;
   padding: 0 0 60px 0;
 }
 .passion__content {
@@ -2200,9 +2204,6 @@ p {
 .social .icon {
   position: relative;
   border-radius: 50%;
-  padding: 15px;
-  width: 50px;
-  height: 50px;
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -2217,10 +2218,10 @@ p {
 .social .tooltip {
   position: absolute;
   top: 0;
-  font-size: 14px;
+  font-size: 11px;
   background: #fff;
   color: #fff;
-  padding: 5px 8px;
+  padding: 5px 4px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
@@ -2239,7 +2240,7 @@ p {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .social .icon:hover .tooltip {
-  top: -34px;
+  top: -37px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -2520,6 +2521,7 @@ address {
   .modal-body__text {
     font-size: 14px;
     padding: 0 20px 24px 30px;
+    width: 260px;
   }
   .registration__input {
     width: 224px;
@@ -2543,7 +2545,15 @@ address {
     width: 280px;
   }
   .passion {
-    align-items: center;
+    align-items: end;
+  }
+  .social .tooltip {
+    font-size: 9px;
+    padding: 5px 3px;
+    left: -9px;
+  }
+  .social .tooltip::before {
+    left: 63%;
   }
 }
 @media (max-width: 1200px) {
